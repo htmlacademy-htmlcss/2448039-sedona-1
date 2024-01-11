@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dasha](https://up.htmlacademy.ru/htmlcss-individual/1/user/2448039).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Вайнруб] (https://htmlacademy.ru/profile/id166797).
 
 ---
 
