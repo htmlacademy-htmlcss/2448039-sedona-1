@@ -54,6 +54,27 @@
             </li>
           </ul>
         </header>
-
+        <section class="catalog-products">
+           <h2 class="visually-hidden">Фильтры гостиниц</h2>
+           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalof-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="catalog-filter-list">
+                    <li class="catalog-filter-item">
+                        <input class="control-input" type="checkbox" name="pool" id="pool-field" checked>
+                        <label for="pool-field">Бассейн</label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <input class="control-input" type="checkbox" name="parking" id="parking-field" checked>
+                        <label for="parking-field">Паркинг</label>
+                    </li>
+                    <li class="catalog-filter-item">
+                        <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi-field">
+                        <label for="wi-fi-field">Wi-Fi</label>
+                    </li>
+                </ul>
+            </fieldset>
+           </form>
+        </section>
   </body>
 </html>
