@@ -13,16 +13,17 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
-/*Главная*/
+/* INDEX */
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #FFFFFF;
 }
 
+/* Page header */
 .navigation-link {
     font-family: inherit;
     font-size: 20px;
@@ -35,6 +36,11 @@ body {
     background-color: #FFFFFF;
 }
 
+.navigation-link-current {
+    text-decoration: underline;
+    text-decoration-color: #756157;
+}
+
 .badge {
     font-size: 10px;
     line-height: 10px;
@@ -42,7 +48,7 @@ body {
     text-align: center;
 }
 
-.button{
+.button {
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
@@ -60,6 +66,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Advantages */
 .advantages {
     text-align: center;
     color: #000000;
@@ -106,6 +113,7 @@ body {
     color: #333333;
 }
 
+/* Services */
 .services {
     text-align: center;
     color: #000000;
@@ -144,6 +152,7 @@ body {
     background-color: #FFFFFF;
 }
 
+/* Search hotel */
 .search-hotel {
     text-align: center;
     color: #000000;
@@ -169,6 +178,7 @@ body {
     line-height: 36px;
 }
 
+/* Subscribe */
 .subscribe {
     text-align: center;
     color: #FFFFFF;
@@ -197,6 +207,7 @@ body {
     background-color: #82B3D3;
 }
 
+/* Page footer */
 .contacts-phone {
     font-family: inherit;
     font-size: 40px;
@@ -207,10 +218,7 @@ body {
     color: #000000;
 }
 
-/*Каталог*/
-.navigation-link-current {
-    text-decoration: underline;
-}
+/* CATALOG */
 
 .main-inner-background {
     color: #FFFFFF;
@@ -227,6 +235,7 @@ body {
     color: #FFFFFF;
 }
 
+/* Breadcrumbs */
 .breadcrumbs-link {
     font-family: inherit;
     font-size: 16px;
@@ -234,6 +243,7 @@ body {
     color: #FFFFFF;
 }
 
+/* Filter */
 .catalog-filter-title {
     font-size: 20px;
     line-height: 24px;
@@ -265,6 +275,7 @@ body {
     background-color: transparent;
 }
 
+/* Controls */
 .controls b {
     font-family: inherit;
     font-size: 30px;
@@ -277,6 +288,7 @@ body {
     color: #333333;
 }
 
+/* Cards */
 .product-card-link {
     text-decoration: none;
 }
@@ -306,6 +318,7 @@ body {
     background-color: #F2F2F2;
 }
 
+/* Pagination */
 .pagination-link {
     font-size: 20px;
     font-weight: 700;
@@ -321,6 +334,7 @@ body {
     background-color: #F2F2F2;
 }
 
+/* Subscribe */
 .subscribe-inner {
     text-align: center;
 }
