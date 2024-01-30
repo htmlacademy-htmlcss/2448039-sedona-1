@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="styles/styles.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -24,23 +25,25 @@
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="badge"> 12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">Хочу сюда!</a>
+            <a class="button navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-inner">
+      <div class="main-inner-background">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -57,8 +60,7 @@
         <section class="catalog-products">
            <h2 class="visually-hidden">Фильтры гостиниц</h2>
            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalof-filter-group">
-                <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                         <input class="control-input" type="checkbox" name="pool" id="pool-field" checked>
@@ -73,9 +75,7 @@
                         <label for="wi-fi-field">Wi-Fi</label>
                     </li>
                 </ul>
-            </fieldset>
-            <fieldset class="catalof-filter-group">
-                <legend class="catalof-filter-title">Тип Жилья:</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                         <label>
@@ -96,17 +96,17 @@
                         </label>
                     </li>
                 </ul>
-            </fieldset>
-                <legend class="catalof-filter-title">Стоимость,₽:</legend>
-                <input type="number" min="0" max="9000" name="min-price" id="min-price" value="0">
-                <input type="number" min="0" max="9000" name="max-price" id="max-price" value="9000">
-                <span class="visually-hidden">от</span>
-                <span class="visually-hidden">до</span>
+                <legend class="catalog-filter-title">Стоимость,₽:</legend>
+                <input class="value-price" type="number" min="0" max="9000" name="min-price" id="min-price" value="0">
+                <input class="value-price" type="number" min="0" max="9000" name="max-price" id="max-price" value="9000">
+                <span class="range-price">от</span>
+                <span class="range-price">до</span>
                 <input type="range" name="slider-price" min="0" max="9000" step="1">
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="submit">Сбросить</button>
+                <button class="button button-apply" type="submit">Применить</button>
+                <button class="button button-reset" type="submit">Сбросить</button>
            </form>
         </section>
+      </div>
         <section class="controls">
           <h2 class="visually-hidden"> Каталог гостиниц</h2>
           <b>Найдено гостиниц: 38</b>
@@ -155,7 +155,7 @@
                 <p class="product-card-price">Гостиница</p>
                 <p class="product-card-price">От 5000 ₽</p>
                 <a class="button product-card-more" href="#">Подробнее</a>
-                <button class="button product-card-favorites added" type="submit">В избранном</button>
+                <button class="button product-card-favorites favorites-added" type="submit">В избранном</button>
                 <p class="product-card-rating">
                     <span class="visually-hidden"> Четыре звезды </span>
                     <span class="button button-rating">Рейтинг: 9,2</span>
@@ -193,7 +193,7 @@
 
           <ul class="pagination">
             <li class="pagination-item">
-                <a class="pagination-link current" href="#"> 1</a>
+                <a class="pagination-link pagination-current" href="#"> 1</a>
             </li>
             <li class="pagination-item">
                 <a class="pagination-link" href="#"> 2</a>
@@ -212,12 +212,12 @@
             </li>
           </ul>
         </section>
-        <section class="subscribe">
-            <h2>Подпишитесь на рассылку</h2>
+        <section class="subscribe-inner">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscribe-email"> Подписаться</label>
-              <input class="form-email" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+              <label for="subscribe-email"> <span class="button button-subscribe">Подписаться</span></label>
+              <input class="form-email form-email-inner" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
             </form>
         </section>
     </main>
