@@ -1,0 +1,352 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+/* INDEX */
+
+body {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Page header */
+.navigation-link {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.navigation-link-current {
+    text-decoration: underline;
+    text-decoration-color: #756157;
+}
+
+.badge {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #756157;
+}
+
+.hero{
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: rgba(131, 179, 211, 0.5)
+}
+
+/* Advantages */
+.advantages {
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.advantages b {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+
+ .advantages-about {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+ }
+
+ .advantages-item {
+    font-family: inherit;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+
+ }
+.advantages-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+ }
+
+.features-item-square, .features-item-tourist {
+    color:#000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.features-item-road {
+    color:#000000;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-description .more {
+    color: #333333;
+}
+
+/* Services */
+.services {
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.services b {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+
+.services-about {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+ }
+
+.services-item {
+    font-family: inherit;
+    color: #333333;
+    background-color: rgba(131, 179, 211, 0.12);
+ }
+
+.services-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.features-item-food {
+    background-color: #FFFFFF;
+}
+
+/* Search hotel */
+.search-hotel {
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.search-hotel-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.search-hotel p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+}
+
+.button-search {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+/* Subscribe */
+.subscribe {
+    text-align: center;
+    color: #FFFFFF;
+    background-color:#756157;
+    background-image: url("../images/subscribe.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.subscribe-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscribe p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.button-subscribe {
+    font-size: 20px;
+    line-height: 36px;
+    background-color: #82B3D3;
+}
+
+/* Page footer */
+.contacts-phone {
+    font-family: inherit;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* CATALOG */
+
+.main-inner-background {
+    color: #FFFFFF;
+    background-color:#756157;
+    background-image: url("../images/catalog-background.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* Breadcrumbs */
+.breadcrumbs-link {
+    font-family: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Filter */
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.catalog-filter-item {
+    line-height: 23px;
+}
+
+.range-price {
+    color: #000000;
+    opacity: 0.3;
+    line-height: 24px;
+}
+
+.value-price {
+    color: #000000;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.button-apply {
+    background-color: #82B3D3;
+}
+
+.button-reset {
+    background-color: transparent;
+}
+
+/* Controls */
+.controls b {
+    font-family: inherit;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.select-control {
+    color: #333333;
+}
+
+/* Cards */
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.product-card-price {
+    color: #333333;
+}
+
+.product-card-favorites {
+    background-color: #82B3D3;
+}
+
+.favorites-added {
+    background-color: #7DB54F;
+}
+
+.button-rating {
+    font-weight: 400;
+    color: #333333;
+    background-color: #F2F2F2;
+}
+
+/* Pagination */
+.pagination-link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    background-color: #82B3D3;
+}
+
+.pagination-current {
+    color:#000000;
+    background-color: #F2F2F2;
+}
+
+/* Subscribe */
+.subscribe-inner {
+    text-align: center;
+}
+
+.subscribe-inner p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333333;
+}
+
+.form-email-inner {
+    background-color: #F2F2F2;
+}
