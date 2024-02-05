@@ -152,8 +152,7 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .advantages-img {
@@ -161,7 +160,7 @@ body {
     width: 800px;
 }
 
- .advantages-item {
+.advantages-item {
     padding: 85px;
     max-width: 400px;
     font-family: inherit;
@@ -347,13 +346,23 @@ body {
 }
 
 .inner-header-title {
+    margin: 0;
+    padding: 0;
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
     color: #FFFFFF;
+    margin-left: 70px;
 }
 
 /* Breadcrumbs */
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+    display: flex;
+}
+
 .breadcrumbs-link {
     font-family: inherit;
     font-size: 16px;
@@ -362,6 +371,23 @@ body {
 }
 
 /* Filter */
+.catalog-products {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.catalog-filter {
+    width: 1060px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150.43px;
+}
+
 .catalog-filter-title {
     font-size: 20px;
     line-height: 24px;
@@ -383,30 +409,68 @@ body {
     color: #000000;
     line-height: 24px;
     font-weight: 700;
+    width: 143px;
 }
 
 .button-apply {
     background-color: #82B3D3;
+    width: 191px;
+    padding: 8px 50px;
 }
 
 .button-reset {
     background-color: transparent;
+    width: 191px;
+    padding: 8px 50px;
 }
 
 /* Controls */
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 70px 60px 70px;
+}
+
+.controls-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .controls b {
     font-family: inherit;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-right: 200px;
 }
 
 .select-control {
     color: #333333;
+    width: 292px;
+    margin-right: 70px;
+}
+
+.card-view-buttons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 160px;
 }
 
 /* Cards */
+.product-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.product-card {
+    border: 1px solid #E6E6E6 ;
+    width: 340px;
+    padding: 20px;
+}
+
 .product-card-link {
     text-decoration: none;
 }
@@ -422,15 +486,26 @@ body {
     color: #333333;
 }
 
+.product-card-more {
+    width: 140px;
+    padding: 8px 26px;
+}
+
 .product-card-favorites {
     background-color: #82B3D3;
+    width: 140px;
+    padding: 8px 20px;
 }
+
 
 .favorites-added {
     background-color: #7DB54F;
+    width: 140px;
+    padding: 8px 18px;
 }
 
 .button-rating {
+    width: 140px;
     font-weight: 400;
     color: #333333;
     background-color: #F2F2F2;
