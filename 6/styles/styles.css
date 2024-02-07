@@ -49,6 +49,7 @@ body {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .header-navigation-logo {
@@ -60,7 +61,14 @@ body {
 .navigation-list{
     margin: 0;
     padding: 0;
+    list-style: none;
     width: 339px;
+    display: flex;
+}
+
+.navigation-item {
+    width: 100px;
+    text-align: center;
 }
 
 .navigation-user {
@@ -91,6 +99,10 @@ body {
     line-height: 10px;
     font-weight: 400;
     text-align: center;
+}
+
+.navigation-user-item:last-child {
+    margin-left: 20px;
 }
 
 .button {
@@ -168,11 +180,12 @@ body {
 }
 
 .advantages-item {
-    padding: 85px;
-    max-width: 400px;
+    padding: 85px 102px;
+    width: 400px;
     font-family: inherit;
     color: #FFFFFF;
     background-color: #82B3D3;
+    box-sizing: border-box;
 }
 
 .advantages-title {
@@ -182,16 +195,18 @@ body {
     font-weight: 700;
     line-height: 28px;
     text-transform: uppercase;
- }
+}
 
 .features-item-square, .features-item-tourist {
     color:#000000;
     background-color: rgba(131, 179, 211, 0.12);
+    padding: 85px 112.5px;
 }
 
 .features-item-road {
     color:#000000;
     background-color: rgba(131, 179, 211, 0.2);
+    padding: 85px 112.5px;
 }
 
 .advantages-description .more {
@@ -328,6 +343,13 @@ body {
 .footer-social {
     max-width: 142px;
     margin-right: 41.5px;
+}
+
+.footer-social-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contacts-phone {
@@ -471,6 +493,8 @@ body {
     padding: 0;
     list-style: none;
     width: 160px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Cards */
@@ -478,12 +502,20 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product-card {
-    border: 1px solid #E6E6E6 ;
-    width: 340px;
-    padding: 20px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    padding: 19px;
+    margin-right: 20px;
+}
+
+.product-card:nth-child(3) {
+    margin-right: 0;
 }
 
 .product-card-link {
@@ -526,6 +558,18 @@ body {
 }
 
 /* Pagination */
+.pagination {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.pagination-item {
+    text-align: center;
+    margin-right: 8px;
+}
+
 .pagination-link {
     font-size: 20px;
     font-weight: 700;
