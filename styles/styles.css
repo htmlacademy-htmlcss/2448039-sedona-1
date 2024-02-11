@@ -418,7 +418,7 @@ body {
     color: #FFFFFF;
     background-color:#756157;
     background-image: url("../images/catalog-background.png");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 35px 70px 70px 70px;
 }
