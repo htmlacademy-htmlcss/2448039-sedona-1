@@ -62,6 +62,7 @@
         <section class="catalog-products">
            <h2 class="visually-hidden">Фильтры гостиниц</h2>
            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -77,6 +78,8 @@
                         <label for="wi-fi-field">Wi-Fi</label>
                     </li>
                 </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -98,15 +101,24 @@
                         </label>
                     </li>
                 </ul>
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <input class="value-price" type="number" min="0" max="9000" name="min-price" id="min-price" value="0">
-                <input class="value-price" type="number" min="0" max="9000" name="max-price" id="max-price" value="9000">
-                <span class="range-price">от</span>
-                <span class="range-price">до</span>
-                <input type="range" name="slider-price" min="0" max="9000" step="1">
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                  <div class="catalog-filter-price">
+                    <div class="catalog-filter-value">
+                      <input class="value-price" type="number" min="0" max="9000" name="min-price" id="min-price" value="0">
+                      <input class="value-price" type="number" min="0" max="9000" name="max-price" id="max-price" value="9000">
+                      <span class="range-price">от</span>
+                      <span class="range-price">до</span>
+                    </div>
+                    <input type="range" name="slider-price" min="0" max="9000" step="1">
+                  </div>
+            </fieldset>
+              <div class="catalog-filter-buttons">
                 <button class="button button-apply" type="submit">Применить</button>
                 <button class="button button-reset" type="submit">Сбросить</button>
-           </form>
+              </div>
+          </form>
         </section>
       </div>
 

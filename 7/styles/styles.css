@@ -324,7 +324,7 @@ body {
     background-image: url("../images/subscribe.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    padding: 96px, 258px, 104px, 258px;
+    padding: 96px 258px 104px 258px;
     text-align: center;
 }
 
@@ -412,14 +412,13 @@ body {
 .main-inner {
     color: #000000;
     background-color: #FFFFFF
-
 }
 
 .main-inner-background {
     color: #FFFFFF;
     background-color:#756157;
     background-image: url("../images/catalog-background.png");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 35px 70px 70px 70px;
 }
@@ -453,7 +452,11 @@ body {
 .catalog-filter {
     width: 1060px;
     display: flex;
-    justify-content: space-between;
+
+}
+
+.catalog-filter-group {
+    margin-right: 70px;
 }
 
 .catalog-filter-list {
@@ -463,8 +466,9 @@ body {
 }
 
 .catalog-filter-item {
+    min-width: 151px;
     line-height: 23px;
-    margin-right: 70px;
+    margin-bottom: 16px;
 }
 
 .catalog-filter-title {
@@ -472,6 +476,13 @@ body {
     line-height: 24px;
     font-weight: 700;
     text-transform: capitalize;
+    margin-bottom: 32px;
+}
+
+.catalog-filter-price {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
 }
 
 .range-price {
@@ -480,21 +491,35 @@ body {
     line-height: 24px;
 }
 
+.catalog-filter-value {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
 .value-price {
     color: #000000;
     line-height: 24px;
     font-weight: 700;
     width: 143px;
+    padding: 12px 20px 12px 20px;
+}
+
+.catalog-filter-buttons {
+    margin-top: 56px;
 }
 
 .button-apply {
     background-color: #82B3D3;
     padding: 8px 50px;
+    width: 191px;
+    margin-bottom: 32px;
 }
 
 .button-reset {
     background-color: transparent;
     padding: 8px 50px;
+    width: 191px;
 }
 
 /* Controls */
