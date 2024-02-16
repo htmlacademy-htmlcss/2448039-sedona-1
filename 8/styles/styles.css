@@ -616,11 +616,13 @@ body {
 
 .product-card-more {
     padding: 8px 26px;
+    align-self: center;
 }
 
 .product-card-favorites {
     background-color: #82B3D3;
     padding: 8px 20px;
+    align-self: center;
 }
 
 .favorites-added {
