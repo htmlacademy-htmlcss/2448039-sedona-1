@@ -98,6 +98,18 @@ body {
     text-decoration-color: #756157;
 }
 
+.navigation-search-link {
+    background-image: url("../images/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navigation-heart-link {
+    background-image: url("../images/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .badge {
     font-size: 10px;
     line-height: 10px;
@@ -118,6 +130,10 @@ body {
     background-color: #756157;
     border-radius: 4px;
     border: none;
+}
+
+.button-navigation {
+    margin-left: 14px;
 }
 
 .main-container {
@@ -354,13 +370,17 @@ body {
     margin: 0;
     width: 408px;
     padding: 12px 20px 12px 20px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
 }
 
-.button-subscribe {S
+.button-subscribe {
     padding: 8px 50px;
     font-size: 20px;
     line-height: 36px;
     background-color: #82B3D3;
+    border-radius: 0 4px 4px 0;
 }
 
 
@@ -549,7 +569,26 @@ body {
     color: #333333;
     width: 292px;
     margin-right: 70px;
+    appearance: none;
     border: 2px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 40px;
+}
+.select-control:hover {
+    border-color: #68A2CA;
+}
+
+.select-control:focus {
+    border-color: #3F5E72;
+    outline: none;
+}
+
+.select-control:disabled {
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .card-view-buttons {

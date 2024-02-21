@@ -127,22 +127,24 @@
             <b>Найдено гостиниц: 38</b>
             <span class="visually-hidden"> Сортировка</span>
             <select class="select-control">
-              <option> Сначала дешевые</option>
+              <option selected> Сначала дешевые</option>
+              <option> Сначала дорогие</option>
+              <option> Сначала популярные</option>
             </select>
 
           <ul class="card-view-buttons">
             <li class="card-view-item">
-                <button class="button card-view-button active" type="submit">
+                <button class="button card-view-button active" type="button">
                   <span class="visually-hidden"> Раскладка плиткой </span>
                 </button>
             </li>
             <li class="card-view-item">
-                <button class="button card-view-button" type="submit">
+                <button class="button card-view-button" type="button">
                     <span class="visually-hidden"> Слайдшоу </span>
                 </button>
             </li>
             <li class="card-view-item">
-                <button class="button card-view-button" type="submit">
+                <button class="button card-view-button" type="button">
                     <span class="visually-hidden">Раскладка списком</span>
                 </button>
             </li>
@@ -234,7 +236,7 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="subscribe-email"></label>
               <input class="form-email form-email-inner" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-              <button class="button button-subscribe">Подписаться</span>
+              <button class="button button-subscribe" type="submit">Подписаться</span>
             </form>
         </section>
       </div>
