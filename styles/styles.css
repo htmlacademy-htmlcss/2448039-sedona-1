@@ -716,7 +716,7 @@ body {
 }
 
 .select-control:disabled {
-    border-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .card-view-buttons {
@@ -879,9 +879,27 @@ body {
     color:#FFFFFF;
     background-color: #82B3D3;
     text-align: center;
+    border-radius: 4px;
 }
 
-.pagination-current {
+
+
+.pagination-link:hover {
+    background: #68A2CA;
+}
+
+.pagination-link:focus {
+    background: #68A2CA;
+}
+
+.pagination-link:active {
+    color: #FFFFFF4D;
+}
+
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
     color:#000000;
     background-color: #F2F2F2;
 }
