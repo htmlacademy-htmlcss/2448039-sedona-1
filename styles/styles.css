@@ -447,6 +447,10 @@ body {
     fill: rgba(104, 162, 202, 1)
 }
 
+.button-social:active svg {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
 .contacts-phone {
     display: inline-block;
     width: 720px;
@@ -534,7 +538,6 @@ body {
 .catalog-filter {
     width: 1060px;
     display: flex;
-
 }
 
 .catalog-filter-group {
@@ -666,8 +669,34 @@ body {
     border: 2px solid #E5E5E5;
 }
 
+.card-view-button:hover {
+    border: 2px solid #000000;
+}
+
+.card-view-button:focus {
+    border: 2px solid #68A2CA;
+}
+
 .card-view-buttons .active {
     border: 2px solid #000000;
+}
+
+.card-view-tile {
+    background-image: url("../images/tile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-view-slideshow {
+    background-image: url("../images/slideshow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-view-list {
+    background-image: url("../images/list.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Cards */
