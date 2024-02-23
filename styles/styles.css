@@ -130,6 +130,7 @@ body {
     background-color: #756157;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
 
 .button-navigation {
