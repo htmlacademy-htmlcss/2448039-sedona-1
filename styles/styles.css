@@ -300,8 +300,23 @@ body {
     color: #000000;
 }
 
+.features-item-home {
+    display: block;
+    background-image: url("../images/housing.svg");
+    background-repeat: no-repeat;
+}
+
 .features-item-food {
+    display: block;
     background-color: #FFFFFF;
+    background-image: url("../images/eating.svg");
+    background-repeat: no-repeat;
+}
+
+.features-item-souvenirs {
+    display: block;
+    background-image: url("../images/souvenir.svg");
+    background-repeat: no-repeat;
 }
 
 /* Search hotel */
@@ -403,11 +418,32 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-social-item {
-    width: 47.33px;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-social {
+    padding: 11px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    color: #83B3D3;
+}
+
+.button-social:hover svg {
+    fill: rgba(104, 162, 202, 1)
+}
+
+.button-social:focus svg {
+    fill: rgba(104, 162, 202, 1)
 }
 
 .contacts-phone {
@@ -424,16 +460,39 @@ body {
     color: #000000;
 }
 
+.contacts-phone:hover {
+   color: #756157
+}
+
+.contacts-phone:focus {
+    color: #756157
+}
+
+.contacts-phone:active {
+    color:rgba(117, 97, 87, 0.3);
+}
+
 .copyright {
     margin-left: auto;
-    width: 115px;
-    height: 33px;
 }
+
+.copyright:hover svg {
+    fill: #756157;
+}
+
+.copyright:focus svg {
+     fill: #756157;
+}
+
+.copyright:active svg{
+     fill:rgba(117, 97, 87, 0.3);
+}
+
 
 /* CATALOG */
 .main-inner {
     color: #000000;
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
 }
 
 .main-inner-background {
