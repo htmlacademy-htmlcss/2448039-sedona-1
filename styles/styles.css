@@ -252,6 +252,22 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     margin-bottom: 62px;
+    position: relative;
+}
+
+.advantages-title::after {
+    position: absolute;
+    content: "";
+    top: 86px;
+    right: 85px;
+    left: 85px;
+    bottom: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-title-current::after {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-description {
@@ -332,6 +348,7 @@ body {
     display: block;
     background-image: url("../images/housing.svg");
     background-repeat: no-repeat;
+    background-position: top 81px center;
 }
 
 .features-item-food {
@@ -339,12 +356,18 @@ body {
     background-color: #FFFFFF;
     background-image: url("../images/eating.svg");
     background-repeat: no-repeat;
+    background-position: top 81px center;
 }
 
 .features-item-souvenirs {
     display: block;
     background-image: url("../images/souvenir.svg");
     background-repeat: no-repeat;
+    background-position: top 81px center;
+}
+
+.services-wrapper {
+    margin-top: 102px;
 }
 
 /* Search hotel */
@@ -874,8 +897,18 @@ body {
 }
 
 .product-card-rating {
-    background-image: url("../images/star.svg");
+    display: block;
+    background-image: url("../images/stars.svg");
     background-repeat: repeat-x;
+    background-position: left;
+}
+
+.stars-three {
+    width: 66px;
+}
+
+.stars-two {
+    width: 42px;
 }
 
 .button-rating {
