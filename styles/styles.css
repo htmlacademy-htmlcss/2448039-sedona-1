@@ -87,6 +87,7 @@ body {
     text-decoration: none;
     text-align: center;
     color: #000000;
+    position: relative;
 }
 
 .navigation-user .navigation-link {
@@ -126,6 +127,13 @@ body {
     line-height: 10px;
     font-weight: 400;
     text-align: center;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 16px;
+    left: 24px;
 }
 
 .button {
@@ -600,11 +608,37 @@ body {
     margin-bottom: 40px;
 }
 
+.breadcrumbs-item {
+    list-style-type: none ;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    display: inline-block;
+    width: 8px;
+    height: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url("../images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
 .breadcrumbs-link {
     font-family: inherit;
     font-size: 16px;
+    line-height: 21px;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+.breadcrumbs-home {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/home.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Filter */
