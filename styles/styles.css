@@ -787,6 +787,7 @@ body {
 .controls-container {
     display: flex;
     margin-bottom: 40px;
+    align-items: center;
 }
 
 .controls b {
@@ -800,6 +801,8 @@ body {
 
 .select-control {
     color: #333333;
+    font-size: 18px;
+    line-height: 21px;
     width: 292px;
     margin-right: 70px;
     appearance: none;
@@ -834,9 +837,10 @@ body {
 }
 
 .card-view-button {
-    padding: 17px 16px;
+    padding: 21px 20px;
     background-color: #FFFFFF;
     border: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 
 .card-view-button:hover {
