@@ -132,8 +132,8 @@ body {
     border-radius: 10px;
     padding: 5px;
     position: absolute;
-    top: 16px;
-    left: 24px;
+    top: 11px;
+    left: 20px;
 }
 
 .button {
@@ -169,7 +169,7 @@ body {
 }
 
 .button-navigation {
-    margin-left: 14px;
+    margin-left: 20px;
 }
 
 .main-container {
@@ -191,6 +191,14 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: rgba(131, 179, 211, 0.5);
+}
+
+.hero .flag-image {
+    width: 1200px;
+    height: 57px;
+    background-image: url("..//images/flag.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .welcome {
@@ -216,10 +224,10 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 25px;
 }
 
  .advantages-about {
+    margin-top: 25px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -318,10 +326,11 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px;
  }
 
 .services-about {
+    margin-top: 20px;
+    margin-bottom: 0;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -350,6 +359,11 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.services-description {
+    margin-bottom: 0;
 }
 
 .features-item-home {
@@ -396,6 +410,7 @@ body {
 }
 
 .search-hotel p {
+    margin-top: 0;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -404,9 +419,13 @@ body {
 }
 
 .button-search {
+    display: block;
+    width: 376px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 20px;
     line-height: 36px;
-    padding: 8px 50px;
+    margin-left: 108px;
 }
 
 .button-search:hover {
@@ -442,6 +461,7 @@ body {
 }
 
 .subscribe p {
+    margin-top: 0;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
