@@ -87,6 +87,7 @@ body {
     text-decoration: none;
     text-align: center;
     color: #000000;
+    position: relative;
 }
 
 .navigation-user .navigation-link {
@@ -126,6 +127,13 @@ body {
     line-height: 10px;
     font-weight: 400;
     text-align: center;
+    color: #FFFFFF;
+    background-color: #7DB54F;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 11px;
+    left: 20px;
 }
 
 .button {
@@ -161,7 +169,7 @@ body {
 }
 
 .button-navigation {
-    margin-left: 14px;
+    margin-left: 20px;
 }
 
 .main-container {
@@ -183,6 +191,14 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: rgba(131, 179, 211, 0.5);
+}
+
+.hero .flag-image {
+    width: 1200px;
+    height: 57px;
+    background-image: url("..//images/flag.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .welcome {
@@ -208,10 +224,10 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 25px;
 }
 
  .advantages-about {
+    margin-top: 25px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -252,6 +268,22 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     margin-bottom: 62px;
+    position: relative;
+}
+
+.advantages-title::after {
+    position: absolute;
+    content: "";
+    top: 86px;
+    right: 85px;
+    left: 85px;
+    bottom: 0;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-title-current::after {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-description {
@@ -294,10 +326,11 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 20px;
  }
 
 .services-about {
+    margin-top: 20px;
+    margin-bottom: 0;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -326,12 +359,18 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     color: #000000;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.services-description {
+    margin-bottom: 0;
 }
 
 .features-item-home {
     display: block;
     background-image: url("../images/housing.svg");
     background-repeat: no-repeat;
+    background-position: top 81px center;
 }
 
 .features-item-food {
@@ -339,12 +378,18 @@ body {
     background-color: #FFFFFF;
     background-image: url("../images/eating.svg");
     background-repeat: no-repeat;
+    background-position: top 81px center;
 }
 
 .features-item-souvenirs {
     display: block;
     background-image: url("../images/souvenir.svg");
     background-repeat: no-repeat;
+    background-position: top 81px center;
+}
+
+.services-wrapper {
+    margin-top: 102px;
 }
 
 /* Search hotel */
@@ -365,6 +410,7 @@ body {
 }
 
 .search-hotel p {
+    margin-top: 0;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -373,9 +419,13 @@ body {
 }
 
 .button-search {
+    display: block;
+    width: 376px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 20px;
     line-height: 36px;
-    padding: 8px 50px;
+    margin-left: 108px;
 }
 
 .button-search:hover {
@@ -411,6 +461,7 @@ body {
 }
 
 .subscribe p {
+    margin-top: 0;
     font-size: 22px;
     font-weight: 400;
     line-height: 26px;
@@ -577,11 +628,50 @@ body {
     margin-bottom: 40px;
 }
 
+.breadcrumbs-item {
+    list-style-type: none ;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    display: inline-block;
+    width: 8px;
+    height: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url("../images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+
 .breadcrumbs-link {
     font-family: inherit;
     font-size: 16px;
+    line-height: 21px;
     text-decoration: none;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.breadcrumbs-link:hover {
+   color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link:active {
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-home {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/home.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Filter */
@@ -697,6 +787,7 @@ body {
 .controls-container {
     display: flex;
     margin-bottom: 40px;
+    align-items: center;
 }
 
 .controls b {
@@ -710,6 +801,8 @@ body {
 
 .select-control {
     color: #333333;
+    font-size: 18px;
+    line-height: 21px;
     width: 292px;
     margin-right: 70px;
     appearance: none;
@@ -744,9 +837,10 @@ body {
 }
 
 .card-view-button {
-    padding: 17px 16px;
+    padding: 21px 20px;
     background-color: #FFFFFF;
     border: 2px solid #E5E5E5;
+    border-radius: 4px;
 }
 
 .card-view-button:hover {
@@ -874,8 +968,18 @@ body {
 }
 
 .product-card-rating {
-    background-image: url("../images/star.svg");
+    display: block;
+    background-image: url("../images/stars.svg");
     background-repeat: repeat-x;
+    background-position: left;
+}
+
+.stars-three {
+    width: 66px;
+}
+
+.stars-two {
+    width: 42px;
 }
 
 .button-rating {
