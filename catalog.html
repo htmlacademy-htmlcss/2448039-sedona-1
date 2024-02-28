@@ -104,14 +104,25 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                  <div class="catalog-filter-price">
-                    <div class="catalog-filter-value">
-                      <input class="value-price" type="number" min="0" max="9000" name="min-price" id="min-price" value="0">
-                      <input class="value-price" type="number" min="0" max="9000" name="max-price" id="max-price" value="9000">
-                      <span class="range-price">от</span>
-                      <span class="range-price">до</span>
+                  <div class="catalog-filter-range">
+                    <div class="range-wrapper-inputs">
+                      <label class="visually-hidden"> Минимальная цена </label>
+                        <input class="range-input" type="number" value="0" name="min-price">
+                        <span class="range-min-price">от</span>
+                      <label class="visually-hidden"> Максимальная цена </label>
+                       <input class="range-input range-input-right" type="number" value="9000" name="max-price">
+                       <span class="range-max-price">до</span>
                     </div>
-                    <input type="range" name="slider-price" min="0" max="9000" step="1">
+                    <div class="range-scale">
+                      <div class="range-bar">
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
             </fieldset>
               <div class="catalog-filter-buttons">
