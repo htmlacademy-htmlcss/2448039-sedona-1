@@ -445,7 +445,7 @@ body {
     color: #FFFFFF;
     background-color:#756157;
     background-image: url("../images/subscribe.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 96px 258px 104px 258px;
     text-align: center;
@@ -685,21 +685,9 @@ body {
 
 .catalog-filter-group {
     margin: 0;
-    margin-right: 70px;
     padding: 0;
     border: none;
-}
-
-.catalog-filter-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.catalog-filter-item {
-    min-width: 151px;
-    line-height: 23px;
-    margin-bottom: 16px;
+    margin-right: 70px;
 }
 
 .catalog-filter-title {
@@ -710,11 +698,81 @@ body {
     margin-bottom: 32px;
 }
 
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-filter-item {
+    min-width: 151px;
+}
+
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.control {
+    position: relative;
+    display: block;
+}
+
+.control-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.control-label {
+    line-height: 23px;
+    padding-left: 36px;
+}
+
+.control:hover {
+    opacity: 0.6;
+}
+
+.control:focus .control-mark {
+    border: 3px solid #83B3D3;
+}
+
+.control-input:disabled + .control-mark {
+    opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+    position: absolute;
+    background-image: url("../images/check.svg");
+    background-repeat: no-repeat;
+    background-position: left 4px center;
+}
+
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3F5E72;
+    content: "";
+}
+
+.catalog-filter-range{
+    margin-left: 70px;
+}
+
 .range-wrapper-inputs {
     display: flex;
     justify-content: space-between;
     gap: 2px;
-    margin-bottom: 36px;
+    margin-bottom: 44px;
     position: relative;
 }
 
@@ -729,6 +787,12 @@ body {
     border: none;
     box-sizing: border-box;
     appearance: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .range-min-price {
@@ -792,12 +856,11 @@ body {
 }
 
 .toggle-min {
-    left: 0.5px;
-    top: 84px;
+    top: -7px;
 }
 
 .toggle-max {
-    top: 84px;
+    top: -7px;
     left: 207px;
 }
 
