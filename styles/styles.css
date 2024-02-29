@@ -637,8 +637,8 @@ body {
 
 .breadcrumbs-item:not(:last-child)::after {
     display: inline-block;
-    width: 8px;
-    height: 11px;
+    width: 7px;
+    height: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background-image: url("../images/arrow-right.svg");
@@ -691,6 +691,8 @@ body {
 }
 
 .catalog-filter-title {
+    margin: 0;
+    padding: 0;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -705,7 +707,7 @@ body {
 }
 
 .catalog-filter-item {
-    min-width: 151px;
+    width: 151px;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -779,6 +781,7 @@ body {
 .range-input {
     width: 143px;
     padding: 12px 20px;
+    font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     color: #000000;
@@ -800,8 +803,8 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.3);
-    top: 10px;
-    left: 100px;
+    top: 12px;
+    left: 95px;
     margin-left: 10px;
 }
 
@@ -810,8 +813,8 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.3);
-    top: 10px;
-    left: 250px;
+    top: 12px;
+    left: 240px;
     margin-left: 10px;
 }
 
@@ -920,6 +923,7 @@ body {
 
 .controls-container {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
     align-items: center;
 }
@@ -942,7 +946,7 @@ body {
     appearance: none;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    padding: 12px 20px;
+    padding: 10px 16px;
     background-image: url("../images/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
@@ -968,11 +972,12 @@ body {
     list-style: none;
     width: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 8px;
 }
 
 .card-view-button {
-    padding: 21px 20px;
+    padding: 21px ;
     background-color: #FFFFFF;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
@@ -1035,7 +1040,14 @@ body {
     grid-column: 1 / -1;
 }
 
+.product-card-image {
+    display: block;
+    background-size: cover;
+}
+
 .product-card-title {
+    margin: 0;
+    margin-top: 16px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -1043,11 +1055,13 @@ body {
 }
 
 .product-card-price {
+    margin: 0;
     color: #333333;
     text-align: right;
 }
 
 .product-card-name {
+    margin: 0;
     color: #333333;
 }
 
