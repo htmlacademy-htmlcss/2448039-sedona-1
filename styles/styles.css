@@ -645,6 +645,68 @@ body {
     text-transform: uppercase;
 }
 
+.search-form {
+
+}
+
+.search-form .field-group {
+
+}
+
+.search-form-date {
+
+}
+
+.form-label {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.false-data {
+    font-size: 16px;
+    color: #FF5757;
+}
+
+.true-data {
+    font-size: 16px;
+    color: #333333;
+}
+
+.field {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+.field-data {
+    background-image: url("../images/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: left 180px center;
+}
+
+.field-person {
+    line-height: 24px;
+    padding: 14px 10px;
+    text-align: center;
+    width: 110px;
+}
+
+.field-person::-webkit-outer-spin-button,
+.field-person::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+.modal-search-button {
+    padding: 18px 77px;
+    border-radius: 10px;
+    background-color: #83B3D3;
+}
 
 /* CATALOG */
 .main-inner {
