@@ -650,7 +650,9 @@ body {
 }
 
 .search-form .field-group {
-
+    display: grid;
+    grid-template-columns: 137px 420px 20px;
+    align-items: center;
 }
 
 .search-form-date {
@@ -663,14 +665,18 @@ body {
     font-weight: 700;
 }
 
-.false-data {
+.false-date {
+    margin: 0;
     font-size: 16px;
     color: #FF5757;
+    grid-column: 2 / -1;
 }
 
-.true-data {
+.true-date {
+    margin: 0;
     font-size: 16px;
     color: #333333;
+    grid-column: 2 / -1;
 }
 
 .field {
@@ -682,10 +688,20 @@ body {
     padding: 12px 20px;
 }
 
-.field-data {
+.date-button {
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
     background-image: url("../images/calendar.svg");
     background-repeat: no-repeat;
-    background-position: left 180px center;
+    background-position: center;
+    grid-column: auto;
+}
+
+.field-date {
+
 }
 
 .field-person {

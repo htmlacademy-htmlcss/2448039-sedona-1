@@ -182,13 +182,19 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group search-form-date">
               <label class="form-label" for="check-in-date"> Дата Заезда:</label>
-              <input class="field field-data" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
-              <p class="false-data"> Мы не можем отправить вас в прошлое.</p>
+              <input class="field field-date" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
+              <button class="date-button" type="button">
+                <span class="visually-hidden"> Календарь </span>
+              </button>
+              <p class="false-date"> Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="field-group search-form-date">
               <label class="form-label" for="check-out-date"> Дата Выезда:</label>
-              <input class="field field-data" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2023">
-              <p class="true-data">На эти даты есть свободные номера. Пока есть.</p>
+              <input class="field field-date" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2023">
+              <button class="date-button" type="button">
+                <span class="visually-hidden"> Календарь </span>
+              </button>
+              <p class="true-date">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="field-group search-form-person">
               <label class="form-label" for="earch-form-adults"> Взрослые:</label>
