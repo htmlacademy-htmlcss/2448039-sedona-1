@@ -651,12 +651,13 @@ body {
 
 .search-form .field-group {
     display: grid;
-    grid-template-columns: 137px 420px 20px;
+    grid-template-columns: 137px 110px 220px 110px;
+    grid-template-rows: 48px 48px;
     align-items: center;
 }
 
 .search-form-date {
-
+    position: relative;
 }
 
 .form-label {
@@ -670,6 +671,7 @@ body {
     font-size: 16px;
     color: #FF5757;
     grid-column: 2 / -1;
+    align-self: start;
 }
 
 .true-date {
@@ -677,6 +679,7 @@ body {
     font-size: 16px;
     color: #333333;
     grid-column: 2 / -1;
+    align-self: start;
 }
 
 .field {
@@ -686,9 +689,11 @@ body {
     border: none;
     border-radius: 4px;
     padding: 12px 20px;
+    background: #F2F2F2;
 }
 
 .date-button {
+    position: absolute;
     padding: 2px;
     border: none;
     cursor: pointer;
@@ -698,17 +703,27 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     grid-column: auto;
+    left: 540px;
+    top: 12px
 }
 
 .field-date {
-
+    grid-column: 2 /-1;
 }
 
 .field-person {
     line-height: 24px;
     padding: 14px 10px;
     text-align: center;
-    width: 110px;
+}
+
+.field-person-children {
+    grid-column: 4 / -1;
+}
+
+.label-children {
+    grid-column: 3 / 4;
+    margin-left: 88px;
 }
 
 .field-person::-webkit-outer-spin-button,
@@ -717,11 +732,11 @@ body {
   margin: 0;
 }
 
-
 .modal-search-button {
     padding: 18px 77px;
     border-radius: 10px;
     background-color: #83B3D3;
+    width: 577px;
 }
 
 /* CATALOG */
