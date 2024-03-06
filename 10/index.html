@@ -172,5 +172,47 @@
       </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden"> Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title"> Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group search-form-date">
+              <label class="form-label" for="check-in-date"> Дата Заезда:</label>
+              <input class="field field-date" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
+              <button class="date-button" type="button">
+                <span class="visually-hidden"> Календарь </span>
+              </button>
+              <p class="false-date"> Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="field-group search-form-date">
+              <label class="form-label" for="check-out-date"> Дата Выезда:</label>
+              <input class="field field-date" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2023">
+              <button class="date-button" type="button">
+                <span class="visually-hidden"> Календарь </span>
+              </button>
+              <p class="true-date">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="field-group search-form-person">
+              <label class="form-label" for="earch-form-adults"> Взрослые:</label>
+              <input class="field field-person" type="number" value="2" name="adults">
+              <button class="button-person button-person-minus" type="button">
+                <span class="visually-hidden"> Меньше </span>
+              </button>
+              <button class="button-person button-person-plus" type="button">
+                <span class="visually-hidden"> Больше </span>
+              </button>
+              <label class="form-label label-children" for="search-form-children"> Дети:</label>
+              <input class="field field-person field-person-children" type="number" value="2" name="children">
+            </div>
+            <button class="button modal-search-button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
