@@ -900,15 +900,14 @@ body {
     opacity: 0.6;
 }
 
-.control-input:focus {
-    border: 3px solid #83B3D3;
-    box-sizing: content-box;
-    margin: 0;
+.control-input:focus-within {
+    outline: 3px solid #83B3D3;
 }
 
 .control-input:disabled {
     opacity: 0.3;
 }
+
 
 .control-input[type="checkbox"]:checked  {
     position: absolute;
