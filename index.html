@@ -172,7 +172,7 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden"> Закрыть</span>
@@ -198,7 +198,13 @@
             </div>
             <div class="field-group search-form-person">
               <label class="form-label" for="earch-form-adults"> Взрослые:</label>
-              <input class="field field-person field-person-adult" type="number" value="2" name="adults">
+              <input class="field field-person" type="number" value="2" name="adults">
+              <button class="button-person button-person-minus" type="button">
+                <span class="visually-hidden"> Меньше </span>
+              </button>
+              <button class="button-person button-person-plus" type="button">
+                <span class="visually-hidden"> Больше </span>
+              </button>
               <label class="form-label label-children" for="search-form-children"> Дети:</label>
               <input class="field field-person field-person-children" type="number" value="2" name="children">
             </div>

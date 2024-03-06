@@ -608,6 +608,10 @@ body {
     background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+    display: none;
+}
+
 .modal {
     position: relative;
     margin: auto;
@@ -672,6 +676,8 @@ body {
     color: #FF5757;
     grid-column: 2 / -1;
     align-self: start;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .true-date {
@@ -680,6 +686,8 @@ body {
     color: #333333;
     grid-column: 2 / -1;
     align-self: start;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .field {
@@ -704,7 +712,7 @@ body {
     background-position: center;
     grid-column: auto;
     left: 540px;
-    top: 12px
+    top: 12px;
 }
 
 .field-date {
@@ -716,6 +724,17 @@ body {
     padding: 14px 10px;
     text-align: center;
 }
+
+.button-person {
+    padding: 14px 10px;
+    border: none;
+    cursor: pointer;
+    width: 2px;
+    height: 14px;
+    background-color: rgba(117, 97, 87, 0.3);
+}
+
+.
 
 .field-person-children {
     grid-column: 4 / -1;
@@ -860,13 +879,14 @@ body {
     display: block;
 }
 
-.control-mark {
+.control-input {
     position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 4px;
     background-color: #FFFFFF;
     cursor: pointer;
+    appearance: none;
 }
 
 .control-label {
@@ -875,30 +895,31 @@ body {
     cursor: pointer;
 }
 
-.control:hover {
+.control:hover,
+.control:active {
     opacity: 0.6;
 }
 
-.control:focus .control-mark {
+/**.control-input:focus {
     border: 3px solid #83B3D3;
-}
+}**/
 
-.control-input:disabled + .control-mark {
+.control-input:disabled {
     opacity: 0.3;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control-input[type="checkbox"]:checked  {
     position: absolute;
     background-image: url("../images/check.svg");
     background-repeat: no-repeat;
     background-position: left 4px center;
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]  {
     border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked::before {
     position: absolute;
     top: 5px;
     left: 5px;
