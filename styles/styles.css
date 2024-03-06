@@ -326,7 +326,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
- }
+}
 
 .services-about {
     margin-top: 20px;
@@ -335,15 +335,15 @@ body {
     line-height: 26px;
     font-weight: 400;
     color: #333333;
- }
+}
 
- .services-list {
+.services-list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
- }
+}
 
 .services-item {
     width: 230px;
@@ -434,6 +434,7 @@ body {
 
 .button-search:focus {
     background: #615048;
+    border: none;
 }
 
 .button-search:active {
@@ -548,7 +549,7 @@ body {
 }
 
 .button-social:focus svg {
-    fill: rgba(104, 162, 202, 1)
+    fill: rgba(104, 162, 202, 1);
 }
 
 .button-social:active svg {
@@ -574,7 +575,7 @@ body {
 }
 
 .contacts-phone:focus {
-    color: #756157
+    color: #756157;
 }
 
 .contacts-phone:active {
@@ -733,8 +734,6 @@ body {
     height: 14px;
     background-color: rgba(117, 97, 87, 0.3);
 }
-
-.
 
 .field-person-children {
     grid-column: 4 / -1;
@@ -900,14 +899,13 @@ body {
     opacity: 0.6;
 }
 
-.control-input:focus-within {
+.control-input:focus-visible {
     outline: 3px solid #83B3D3;
 }
 
 .control-input:disabled {
     opacity: 0.3;
 }
-
 
 .control-input[type="checkbox"]:checked  {
     position: absolute;
@@ -962,6 +960,21 @@ body {
   appearance: none;
   margin: 0;
 }
+
+.range-input:hover {
+    background: #E6E6E6;
+}
+
+.range-input:focus-visible {
+    outline: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.range-input:hover {
+    outline: 2px solid #000000;
+    background-color: #E6E6E6;
+}
+
 
 .range-min-price {
     position: absolute;
@@ -1063,11 +1076,10 @@ body {
 
 .button-reset:hover {
     opacity: 0.6;
-    background-color: transparent;
 }
 
 .button-reset:focus {
-    border: 3px solid rgba(131, 179, 211, 1)
+   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .button-reset:active {
@@ -1123,7 +1135,7 @@ body {
 }
 
 .select-control:focus {
-    border-color: #3F5E72;
+    border-color: #68A2CA;
     outline: none;
 }
 
