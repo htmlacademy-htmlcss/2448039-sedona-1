@@ -736,8 +736,17 @@ body {
 
 .button-person {
     position: absolute;
+    padding: 24px 20px;
+    left: 140px;
+    top: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.button-person::before {
+    position: absolute;
     top: 23px;
-    left: 150px;
+    left: 10px;
     width: 14px;
     height: 2px;
     content: "";
@@ -747,13 +756,13 @@ body {
 }
 
 .button-person-plus {
-    left: 220px;
+    left: 205px;
 }
 
 .button-person-plus::after {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
+    top: 23px;
     width: 14px;
     height: 2px;
     content: "";
@@ -771,17 +780,17 @@ body {
 }
 
 .button-children-minus {
-    left: 485px;
+    left: 475px;
 }
 
 .button-children-plus {
-    left: 550px;
+    left: 535px;
 }
 
 .button-children-plus::after {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
+    top: 23px;
     width: 14px;
     height: 2px;
     content: "";
