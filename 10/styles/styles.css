@@ -326,7 +326,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
- }
+}
 
 .services-about {
     margin-top: 20px;
@@ -335,15 +335,15 @@ body {
     line-height: 26px;
     font-weight: 400;
     color: #333333;
- }
+}
 
- .services-list {
+.services-list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-between;
- }
+}
 
 .services-item {
     width: 230px;
@@ -434,6 +434,7 @@ body {
 
 .button-search:focus {
     background: #615048;
+    border: none;
 }
 
 .button-search:active {
@@ -548,7 +549,7 @@ body {
 }
 
 .button-social:focus svg {
-    fill: rgba(104, 162, 202, 1)
+    fill: rgba(104, 162, 202, 1);
 }
 
 .button-social:active svg {
@@ -574,7 +575,7 @@ body {
 }
 
 .contacts-phone:focus {
-    color: #756157
+    color: #756157;
 }
 
 .contacts-phone:active {
@@ -606,6 +607,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
+    z-index: 1;
 }
 
 .modal-container-close {
@@ -628,8 +630,8 @@ body {
 .modal-close-button {
     position: absolute;
     top: 64px;
-    left: 613px;
-    padding: 19px;
+    left: 615px;
+    padding: 26px;
     background-color: #F2F2F2;
     border-radius: 50%;
     background-image: url("../images/close.svg");
@@ -637,6 +639,19 @@ body {
     background-position: center;
     border: none;
     cursor: pointer;
+}
+
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:focus-visible {
+    outline: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+    opacity: 0.3;
 }
 
 .modal-title {
@@ -647,10 +662,6 @@ body {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-}
-
-.search-form {
-
 }
 
 .search-form .field-group {
@@ -670,34 +681,37 @@ body {
     font-weight: 700;
 }
 
-.false-date {
-    margin: 0;
-    font-size: 16px;
-    color: #FF5757;
-    grid-column: 2 / -1;
-    align-self: start;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.true-date {
-    margin: 0;
-    font-size: 16px;
-    color: #333333;
-    grid-column: 2 / -1;
-    align-self: start;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 .field {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+    color: #000000;
     border: none;
     border-radius: 4px;
     padding: 12px 20px;
     background: #F2F2F2;
+}
+
+.field::placeholder {
+    color:#000000;
+}
+
+.field.field:not(.field-person):hover {
+    background: #E6E6E6;
+}
+
+.field:not(.field-person):focus {
+    outline: 3px solid #83B3D3;
+    background: #E6E6E6;
+}
+
+.field:disabled,
+.date-button:disabled {
+    opacity: 0.4;
+}
+
+.field-date {
+    grid-column: 2 /-1;
 }
 
 .date-button {
@@ -710,39 +724,44 @@ body {
     background-image: url("../images/calendar.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-color: transparent;
+    opacity: 0.3;
     grid-column: auto;
-    left: 540px;
-    top: 12px;
+    left: 538px;
+    top: 13px;
 }
 
-.field-date {
-    grid-column: 2 /-1;
+.false-date {
+    margin: 0;
+    font-size: 16px;
+    color: #FF5757;
+    grid-column: 2 / -1;
+    align-self: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.true-date {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
+    grid-column: 2 / -1;
+    align-self: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.search-form-person {
+    position: relative;
 }
 
 .field-person {
     line-height: 24px;
     padding: 14px 10px;
     text-align: center;
-}
-
-.button-person {
-    padding: 14px 10px;
-    border: none;
-    cursor: pointer;
-    width: 2px;
-    height: 14px;
-    background-color: rgba(117, 97, 87, 0.3);
-}
-
-.
-
-.field-person-children {
-    grid-column: 4 / -1;
-}
-
-.label-children {
-    grid-column: 3 / 4;
-    margin-left: 88px;
+    border-radius: 4px;
 }
 
 .field-person::-webkit-outer-spin-button,
@@ -751,11 +770,173 @@ body {
   margin: 0;
 }
 
+.button-person {
+    position: absolute;
+    padding: 10px 10px;
+    left: 152px;
+    top: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-person::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    content: "";
+    background-color: rgba(117, 97, 87, 0.3);
+    cursor: pointer;
+    border: none;
+}
+
+.button-person:hover::before,
+.button-person-plus:hover::after,
+.button-children-plus:hover::after {
+    background-color: #000000;
+}
+
+.button-person:active::before,
+.button-person-plus:active::after,
+.button-children-plus:active::after {
+    background-color: rgba(117, 97, 87, 0.3);
+}
+
+.button-person:focus-visible {
+    outline: 3px solid #82B3D3;
+    border-radius: 4px;
+}
+.button-person:focus::before,
+.button-person-plus:focus::after,
+.button-children-plus:focus::after {
+    background-color: #000000;
+}
+
+.button-person-plus {
+    left: 220px;
+}
+
+.button-person-plus::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 14px;
+    height: 2px;
+    content: "";
+    background-color: rgba(117, 97, 87, 0.3);
+    transform: rotate(90deg);
+}
+
+.label-children {
+    grid-column: 3 / 4;
+    margin-left: 88px;
+}
+
+.field-person-children {
+    grid-column: 4 / -1;
+}
+
+.button-children-minus {
+    left: 477px;
+}
+
+.button-children-plus {
+    left: 550px;
+}
+
+.button-children-plus::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 14px;
+    height: 2px;
+    content: "";
+    background-color: rgba(117, 97, 87, 0.3);
+    transform: rotate(90deg);
+}
+
 .modal-search-button {
     padding: 18px 77px;
     border-radius: 10px;
     background-color: #83B3D3;
     width: 577px;
+}
+
+.modal-search-button:hover {
+    background: #68A2CA;
+}
+
+.modal-search-button:focus {
+    background: #68A2CA;
+}
+
+.modal-search-button:active {
+    color: #FFFFFF4D;
+}
+
+/*Tooltip*/
+.tooltip {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+}
+
+.tooltip-toggle {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: transparent;
+}
+
+.form-label-icon {
+    position: relative;
+    padding-right: 10px;
+}
+
+.tooltip-icon {
+    width: 100%;
+    height: 100%;
+    color: #83B3D3;
+    display: block;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  width: 216px;
+  box-shadow: 0 15px 30px 0 #0000004D;
+  position: absolute;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-text:after {
+    content:'';
+    background-image: url("../images/tooltip-arrow.svg");
+    width: 19px;
+    height: 9px;
+    position:absolute;
+    bottom: 100%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 /* CATALOG */
@@ -900,14 +1081,13 @@ body {
     opacity: 0.6;
 }
 
-.control-input:focus-within {
+.control-input:focus-visible {
     outline: 3px solid #83B3D3;
 }
 
 .control-input:disabled {
     opacity: 0.3;
 }
-
 
 .control-input[type="checkbox"]:checked  {
     position: absolute;
@@ -962,6 +1142,22 @@ body {
   appearance: none;
   margin: 0;
 }
+
+.range-input:hover {
+    background: #E6E6E6;
+    outline: none;
+}
+
+.range-input:focus-visible {
+    outline: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.range-input:active {
+    outline: 2px solid #000000;
+    background-color: #E6E6E6;
+}
+
 
 .range-min-price {
     position: absolute;
@@ -1063,11 +1259,10 @@ body {
 
 .button-reset:hover {
     opacity: 0.6;
-    background-color: transparent;
 }
 
 .button-reset:focus {
-    border: 3px solid rgba(131, 179, 211, 1)
+   outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .button-reset:active {
@@ -1123,7 +1318,7 @@ body {
 }
 
 .select-control:focus {
-    border-color: #3F5E72;
+    border-color: #68A2CA;
     outline: none;
 }
 
