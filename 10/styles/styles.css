@@ -773,7 +773,7 @@ body {
 .button-person {
     position: absolute;
     padding: 10px 10px;
-    left: 152px;
+    left: 146px;
     top: 13px;
     border: none;
     cursor: pointer;
@@ -782,7 +782,7 @@ body {
 .button-person::before {
     position: absolute;
     top: 10px;
-    left: 0;
+    left: 3px;
     width: 14px;
     height: 2px;
     content: "";
@@ -819,7 +819,7 @@ body {
 
 .button-person-plus::after {
     position: absolute;
-    left: 0;
+    left: 3px;
     top: 10px;
     width: 14px;
     height: 2px;
@@ -847,7 +847,7 @@ body {
 
 .button-children-plus::after {
     position: absolute;
-    left: 0;
+    left: 3px;
     top: 10px;
     width: 14px;
     height: 2px;
