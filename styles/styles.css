@@ -110,6 +110,11 @@ body {
     background-color: #756157;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+    opacity: 0.6;
+}
+
 .navigation-search-link {
     background-image: url("../images/search.svg");
     background-repeat: no-repeat;
@@ -188,7 +193,7 @@ body {
 
 .hero {
     background-image: url("../images/index-background.jpg");
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(131, 179, 211, 0.5);
 }
@@ -244,12 +249,14 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
 }
 
 .advantages-img {
     width: 800px;
+    object-fit: cover;
+    height: auto;
 }
 
 .advantages-item {
@@ -341,8 +348,8 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
 }
 
 .services-item {
@@ -446,7 +453,7 @@ body {
     color: #FFFFFF;
     background-color:#756157;
     background-image: url("../images/subscribe.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 96px 258px 104px 258px;
     text-align: center;
@@ -479,6 +486,20 @@ body {
     border-radius: 4px 0 0 4px;
     border: none;
     outline: none;
+}
+
+.form-email:hover {
+    outline: 1px solid #68A2CA;
+    background-color: #E6E6E6;
+}
+
+.form-email:focus {
+    outline: 1px solid #68A2CA;
+    background-color: #E6E6E6;
+}
+
+.select-control:disabled {
+    color: rgba(0, 0, 0, 0.3);
 }
 .subscribe-email {
     margin: 0;
@@ -515,7 +536,8 @@ body {
 }
 
 .footer-social {
-    width: 142px;
+    max-width: 142px;
+    margin-right: 41.5px;
 }
 
 .footer-social-list {
@@ -556,10 +578,13 @@ body {
     fill: rgba(104, 162, 202, 0.3);
 }
 
-.contacts-phone {
-    display: inline-block;
-    width: 720px;
+.footer-phone {
+    max-width: 720px;
     margin-right: 41.5px;
+}
+
+.contacts-phone {
+    display: block;
     font-family: inherit;
     font-size: 40px;
     line-height: 40px;
@@ -582,8 +607,8 @@ body {
     color:rgba(117, 97, 87, 0.3);
 }
 
-.copyright {
-    margin-left: auto;
+.footer-copyright {
+    max-width: 115px;
 }
 
 .copyright:hover svg {
@@ -712,6 +737,7 @@ body {
 
 .field-date {
     grid-column: 2 /-1;
+    padding-right: 50px;
 }
 
 .date-button {
@@ -1492,10 +1518,11 @@ body {
 }
 
 .button-rating {
-    padding: 9px 22px 8px 23px;
+    padding: 8px 22px 8px 23px;
     font-weight: 400;
     color: #333333;
     background-color: #F2F2F2;
+    height: 20px;
 }
 
 /* Pagination */
