@@ -1161,6 +1161,7 @@ body {
     border: none;
     box-sizing: border-box;
     appearance: none;
+    padding-right: 50px;
 }
 
 .range-input::-webkit-outer-spin-button,
