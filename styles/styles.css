@@ -17,6 +17,7 @@
 /* INDEX */
 html {
     height: 100%;
+    background: rgba(242, 242, 242, 1);
 }
 
 .visually-hidden {
@@ -34,6 +35,7 @@ html {
 
 body {
     margin: 0 40px;
+    min-width: 1200px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -42,38 +44,43 @@ body {
     line-height: 21px;
     color: #000000;
     background-color: #FFFFFF;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Page header */
 .navigation {
     display: flex;
-    width: 1200px;
+    width: 1060px;
     margin: 0 auto;
-    align-items: center;
-    height: 64px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .header-navigation-logo {
+    position: absolute;
     width: 140px;
-    margin-right: 30px;
-    margin-left: 70px;
     height: 70px;
+    margin-right: 30px;
     z-index: 1;
 }
 
 .navigation-list{
     margin: 0;
     padding: 0;
+    max-width: 500px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 168px;
+}
+
+.navigation-item{
+    position: relative;
 }
 
 .navigation-user {
     max-width: 268px;
     margin-left: auto;
-    margin-right: 70px;
-    align-items: center;
 }
 
 .navigation-link {
@@ -175,6 +182,8 @@ body {
 
 .button-navigation {
     margin-left: 20px;
+    display: block;
+    margin-top: 14px;
 }
 
 .main-container {
@@ -619,7 +628,6 @@ body {
 
 .footer-copyright {
     max-width: 115px;
-    align-self: center;
 }
 
 .copyright a {
@@ -1329,7 +1337,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    align-items: center;
 }
 
 .controls b {
@@ -1338,6 +1345,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    padding-right: 20px;
     margin-right: auto;
 }
 
@@ -1345,7 +1353,8 @@ body {
     color: #333333;
     font-size: 18px;
     line-height: 21px;
-    width: 292px;
+    min-width: 292px;
+    max-height: 45px;
     margin-right: 70px;
     appearance: none;
     border: 2px solid #E5E5E5;
@@ -1470,7 +1479,7 @@ body {
 }
 
 .product-card-more {
-    padding: 8px 26px;
+    padding: 8px 20px;
     align-self: center;
 }
 
@@ -1540,7 +1549,7 @@ body {
     font-weight: 400;
     color: #333333;
     background-color: #F2F2F2;
-    height: 20px;
+    min-height: 20px;
 }
 
 /* Pagination */
@@ -1558,8 +1567,8 @@ body {
 .pagination-link {
     display: block;
     box-sizing: border-box;
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     padding: 11px 18px;
     font-size: 20px;
     font-weight: 700;
