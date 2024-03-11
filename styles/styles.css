@@ -1297,6 +1297,7 @@ body {
    flex-direction: column;
    gap: 32px;
    margin-top: 56px;
+   margin-left: auto;
 }
 
 .button-apply {
@@ -1399,8 +1400,9 @@ body {
     list-style: none;
     width: 160px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     gap: 8px;
+    flex-wrap: wrap;
 }
 
 .card-view-button {
@@ -1572,6 +1574,11 @@ body {
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.pagination-item {
+    margin-bottom: 5px;
 }
 
 .pagination-item:not(:last-child) {
