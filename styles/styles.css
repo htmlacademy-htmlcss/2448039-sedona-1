@@ -184,6 +184,7 @@ body {
 .button-navigation:hover,
 .button-navigation:focus {
     background: #615048;
+    outline: none;
 }
 
 .button-navigation:active {
@@ -465,7 +466,7 @@ body {
 
 .button-search:focus {
     background: #615048;
-    border: none;
+    outline: none;
 }
 
 .button-search:active {
@@ -545,6 +546,7 @@ body {
 .button-subscribe:hover,
 .button-subscribe:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .button-subscribe:active {
@@ -615,7 +617,7 @@ body {
 
 .contacts-phone:hover,
 .contacts-phone:focus {
-   color: #756157
+   color: #756157;
 }
 
 .contacts-phone:active {
@@ -710,8 +712,9 @@ body {
 .search-form .field-group {
     display: grid;
     grid-template-columns: 137px 110px 220px 110px;
-    grid-template-rows: 48px 48px;
-    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: baseline;
 }
 
 .search-form-date {
@@ -774,7 +777,7 @@ body {
     opacity: 0.3;
     grid-column: auto;
     left: 538px;
-    top: 13px;
+    top: 25px;
 }
 
 .date-button:hover,
@@ -829,14 +832,14 @@ body {
     position: absolute;
     padding: 10px;
     left: 146px;
-    top: 13px;
+    top: 27px;
     border: none;
     cursor: pointer;
 }
 
 .button-person::before {
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: 3px;
     width: 14px;
     height: 2px;
@@ -881,7 +884,7 @@ body {
 .button-person-plus::after {
     position: absolute;
     left: 3px;
-    top: 10px;
+    top: 13px;
     width: 14px;
     height: 2px;
     content: "";
@@ -909,7 +912,7 @@ body {
 .button-children-plus::after {
     position: absolute;
     left: 3px;
-    top: 10px;
+    top: 13px;
     width: 14px;
     height: 2px;
     content: "";
@@ -927,6 +930,7 @@ body {
 .modal-search-button:hover,
 .modal-search-button:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .modal-search-button:active {
@@ -1287,7 +1291,7 @@ body {
 }
 
 .range-toggle:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     box-shadow: 0px 4px 10px 0px  rgba(0, 0, 0, 0.25);
 }
 
@@ -1327,6 +1331,7 @@ body {
 .button-apply:hover,
 .button-apply:focus  {
     background: #68A2CA;
+    outline: none;
 }
 
 .button-apply:active {
@@ -1377,7 +1382,7 @@ body {
     text-transform: uppercase;
     padding-right: 20px;
     margin-right: auto;
-    align-self: center;
+    align-items: center;
 }
 
 .select-control {
@@ -1412,7 +1417,8 @@ body {
 }
 
 .card-view-buttons {
-    width: 160px;
+    min-width: 160px;
+    max-height: 48px;
     display: flex;
     justify-content: flex-end;
     gap: 8px;
@@ -1426,17 +1432,17 @@ body {
     border-radius: 4px;
 }
 
-.card-view-button:hover,
-.card-view-button:active {
+.card-view-buttons .active {
+    border: 2px solid #000000;
+}
+
+.card-view-button:hover {
     border: 2px solid #000000;
 }
 
 .card-view-button:focus {
     border: 2px solid #68A2CA;
-}
-
-.card-view-buttons .active {
-    border: 2px solid #000000;
+    outline: none;
 }
 
 /* Cards */
@@ -1484,7 +1490,6 @@ body {
 
 .product-card-title {
     margin: 0;
-    margin-top: 16px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -1494,6 +1499,7 @@ body {
 .product-card-link:hover,
 .product-card-link:focus {
     opacity: 0.6;
+    outline: none;
 }
 
 .product-card-link:active {
@@ -1519,6 +1525,7 @@ body {
 .product-card-more:hover,
 .product-card-more:focus {
     background: #615048;
+    outline: none;
 }
 
 .product-card-more:active {
@@ -1534,6 +1541,7 @@ body {
 .product-card-favorites:hover,
 .product-card-favorites:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .product-card-favorites:active {
@@ -1548,6 +1556,7 @@ body {
 .favorites-added:hover,
 .favorites-added:focus {
     background: #6C9E42;
+    outline: mone;
 }
 
 .favorites-added:active {
@@ -1615,6 +1624,7 @@ body {
 .pagination-next:hover,
 .pagination-next:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .pagination-next:active {
