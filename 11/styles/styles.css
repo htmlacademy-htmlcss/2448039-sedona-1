@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -28,7 +35,8 @@ html {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -184,6 +192,7 @@ body {
 .button-navigation:hover,
 .button-navigation:focus {
     background: #615048;
+    outline: none;
 }
 
 .button-navigation:active {
@@ -328,7 +337,8 @@ body {
 .features-item-road {
     color:#000000;
     background-color: rgba(131, 179, 211, 0.2);
-    padding: 112px 85px;
+    padding: 112px 84px;
+    width: 232px;
 }
 
 .advantages-bridge {
@@ -465,7 +475,7 @@ body {
 
 .button-search:focus {
     background: #615048;
-    border: none;
+    outline: none;
 }
 
 .button-search:active {
@@ -545,6 +555,7 @@ body {
 .button-subscribe:hover,
 .button-subscribe:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .button-subscribe:active {
@@ -615,7 +626,7 @@ body {
 
 .contacts-phone:hover,
 .contacts-phone:focus {
-   color: #756157
+   color: #756157;
 }
 
 .contacts-phone:active {
@@ -710,8 +721,8 @@ body {
 .search-form .field-group {
     display: grid;
     grid-template-columns: 137px 110px 220px 110px;
-    grid-template-rows: 48px 48px;
-    align-items: center;
+    padding-bottom: 22px;
+    align-items: baseline;
 }
 
 .search-form-date {
@@ -728,6 +739,7 @@ body {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+    font-family: "PT Sans", "Arial", sans-serif;
     color: #000000;
     border: none;
     border-radius: 4px;
@@ -735,19 +747,28 @@ body {
     background: #F2F2F2;
 }
 
-.field::placeholder {
-    color:#000000;
+.field:placeholder-shown {
+    color: #000000;
+    opacity: 0.6;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
     font-family: "PT Sans", "Arial", sans-serif;
-}
-
-.field:not(.field-person):hover {
-    background: #E6E6E6;
 }
 
 .field:not(.field-person):focus {
     outline: 3px solid #83B3D3;
     background: #E6E6E6;
 }
+
+.field-date input:placeholder-shown {
+    outline: 2px solid #000000;
+}
+
+.field:not(.field-person):hover {
+    background: #E6E6E6;
+}
+
 
 .field:disabled,
 .date-button:disabled {
@@ -777,13 +798,18 @@ body {
     top: 13px;
 }
 
-.date-button:hover,
-.date-button:focus {
+.date-button:hover {
     opacity: 1;
 }
 
 .date-button:active {
     opacity: 0.3;
+}
+
+.date-button:focus {
+    opacity: 1;
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 
 .false-date {
@@ -814,24 +840,34 @@ body {
 
 .field-person {
     line-height: 24px;
-    padding: 14px 10px;
+    padding: 12px 10px;
     text-align: center;
     border-radius: 4px;
 }
 
+.field-person:focus {
+    outline: 3px solid #83B3D3;
+}
+
 .field-person::-webkit-outer-spin-button,
 .field-person::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+            appearance: none;
+    margin: 0;
+}
+
+.field-person {
+    -moz-appearance: textfield;
 }
 
 .button-person {
     position: absolute;
     padding: 10px;
     left: 146px;
-    top: 13px;
+    top: 12px;
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .button-person::before {
@@ -918,6 +954,9 @@ body {
 }
 
 .modal-search-button {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 26px;
     padding: 18px 77px;
     border-radius: 10px;
     background-color: #83B3D3;
@@ -927,6 +966,7 @@ body {
 .modal-search-button:hover,
 .modal-search-button:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .modal-search-button:active {
@@ -990,7 +1030,7 @@ body {
     right:0;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
@@ -1139,7 +1179,8 @@ body {
     border-radius: 4px;
     background-color: #FFFFFF;
     cursor: pointer;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
 }
 
 .control-label {
@@ -1206,14 +1247,20 @@ body {
     background-color: #F2F2F2;
     border: none;
     box-sizing: border-box;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     padding-right: 50px;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+            appearance: none;
+    margin: 0;
+}
+
+.range-input {
+    -moz-appearance: textfield;
 }
 
 .range-input:hover {
@@ -1228,7 +1275,7 @@ body {
 
 .range-input:active {
     outline: 2px solid #000000;
-    background-color: #E6E6E6;
+    background: #F2F2F2;
 }
 
 .range-input:disabled {
@@ -1287,13 +1334,14 @@ body {
 }
 
 .range-toggle:focus {
-    border: 3px solid #83B3D3;
-    box-shadow: 0px 4px 10px 0px  rgba(0, 0, 0, 0.25);
+    outline: 3px solid #83B3D3;
+    box-shadow: 0 4px 10px 0  rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
     border: 2px solid #83B3D3;
-    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+    outline: none;
 }
 
 .range-toggle:disabled {
@@ -1327,6 +1375,7 @@ body {
 .button-apply:hover,
 .button-apply:focus  {
     background: #68A2CA;
+    outline: none;
 }
 
 .button-apply:active {
@@ -1388,10 +1437,12 @@ body {
     min-width: 292px;
     max-height: 49px;
     margin-right: 70px;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     padding: 10px 20px;
+    background-color: #FFFFFF;
     background-image: url("../images/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
@@ -1412,7 +1463,8 @@ body {
 }
 
 .card-view-buttons {
-    width: 160px;
+    min-width: 160px;
+    max-height: 48px;
     display: flex;
     justify-content: flex-end;
     gap: 8px;
@@ -1420,23 +1472,28 @@ body {
 }
 
 .card-view-button {
-    padding: 12px 13px;
+    padding: 12px 14px;
     background-color: #FFFFFF;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
 }
 
-.card-view-button:hover,
-.card-view-button:active {
+.card-view-buttons .active {
+    border: 2px solid #000000;
+}
+
+.card-view-button:hover {
     border: 2px solid #000000;
 }
 
 .card-view-button:focus {
     border: 2px solid #68A2CA;
+    outline: none;
 }
 
-.card-view-buttons .active {
+.card-view-button:active {
     border: 2px solid #000000;
+    outline: none;
 }
 
 /* Cards */
@@ -1484,7 +1541,6 @@ body {
 
 .product-card-title {
     margin: 0;
-    margin-top: 16px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -1494,6 +1550,7 @@ body {
 .product-card-link:hover,
 .product-card-link:focus {
     opacity: 0.6;
+    outline: none;
 }
 
 .product-card-link:active {
@@ -1519,6 +1576,7 @@ body {
 .product-card-more:hover,
 .product-card-more:focus {
     background: #615048;
+    outline: none;
 }
 
 .product-card-more:active {
@@ -1534,6 +1592,7 @@ body {
 .product-card-favorites:hover,
 .product-card-favorites:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .product-card-favorites:active {
@@ -1548,6 +1607,7 @@ body {
 .favorites-added:hover,
 .favorites-added:focus {
     background: #6C9E42;
+    outline: none;
 }
 
 .favorites-added:active {
@@ -1615,6 +1675,7 @@ body {
 .pagination-next:hover,
 .pagination-next:focus {
     background: #68A2CA;
+    outline: none;
 }
 
 .pagination-next:active {
