@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link href="styles/styles.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
         <a class="header-navigation-logo" href="#">
@@ -93,7 +95,7 @@
         <ul class="services-list">
           <li class="services-item features-item-home">
             <div class="services-wrapper">
-              <h3 class="services-name">Жилье</h3>
+              <h3 class="services-name">Жильё</h3>
               <p class="services-description">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </div>
           </li>
@@ -130,7 +132,7 @@
     </main>
 
     <footer class="page-footer">
-      <section class="contacts"></section>
+      <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
         <div class="page-footer-container">
           <div class="footer-social">
@@ -178,7 +180,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden"> Закрыть</span>
         </button>
         <section class="modal-content">
@@ -186,7 +188,7 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group search-form-date">
               <label class="form-label" for="check-in-date"> Дата Заезда:</label>
-              <input class="field field-date" type="text" id="check-in-date" name="check-in-date" placeholder="27 апреля 2020">
+              <input class="field field-date" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату">
               <button class="date-button" type="button">
                 <span class="visually-hidden"> Календарь </span>
               </button>
@@ -194,21 +196,21 @@
             </div>
             <div class="field-group search-form-date">
               <label class="form-label" for="check-out-date"> Дата Выезда:</label>
-              <input class="field field-date" type="text" id="check-out-date" name="check-out-date" placeholder="1 сентября 2023">
+              <input class="field field-date" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2023"  placeholder="Укажите дату">
               <button class="date-button" type="button">
                 <span class="visually-hidden"> Календарь </span>
               </button>
               <p class="true-date">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="field-group search-form-person">
-                <label class="form-label" for="search-form-adults"> Взрослые:</label>
-                <input class="field field-person" type="number" id="search-form-adults" value="2" name="adults">
-                <button class="button-person" type="button">
-                  <span class="visually-hidden"> Меньше </span>
-                </button>
-                <button class="button-person button-person-plus" type="button">
-                  <span class="visually-hidden"> Больше </span>
-                </button>
+              <label class="form-label" for="search-form-adults"> Взрослые:</label>
+              <input class="field field-person" type="number" id="search-form-adults" value="2" name="adults" placeholder="0">
+              <button class="button-person" type="button">
+                <span class="visually-hidden"> Меньше </span>
+              </button>
+              <button class="button-person button-person-plus" type="button">
+                <span class="visually-hidden"> Больше </span>
+              </button>
                 <span class="form-label form-label-icon">
                   <label class="form-label label-children" for="search-form-children"> Дети:</label>
                   <span class="tooltip">
@@ -221,18 +223,19 @@
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-children"> Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно. </span>
                   </span>
                 </span>
-                <input class="field field-person field-person-children" type="number" id="search-form-children" value="2" name="children">
-                <button class="button-person button-children-minus" type="button">
-                  <span class="visually-hidden"> Меньше </span>
-                </button>
-                <button class="button-person button-children-plus" type="button">
-                  <span class="visually-hidden"> Больше </span>
-                </button>
+              <input class="field field-person field-person-children" type="number" id="search-form-children" value="2" name="children" placeholder="0">
+              <button class="button-person button-children-minus" type="button">
+                <span class="visually-hidden"> Меньше </span>
+              </button>
+              <button class="button-person button-children-plus" type="button">
+                <span class="visually-hidden"> Больше </span>
+              </button>
             </div>
             <button class="button modal-search-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
+    </div>
     </div>
   </body>
 </html>
