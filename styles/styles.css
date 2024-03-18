@@ -42,8 +42,8 @@ html {
 }
 
 body {
-    margin: 0 40px;
-    min-width: 1200px;
+    margin: 0 auto;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -52,6 +52,11 @@ body {
     line-height: 21px;
     color: #000000;
     background-color: #FFFFFF;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-wrapper {
+    min-width: 1200px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
