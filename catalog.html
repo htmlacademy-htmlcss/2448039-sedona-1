@@ -135,7 +135,7 @@
             </fieldset>
               <div class="catalog-filter-buttons">
                 <button class="button button-apply" type="submit">Применить</button>
-                <button class="button button-reset" type="submit">Сбросить</button>
+                <button class="button button-reset" type="reset">Сбросить</button>
               </div>
            </form>
          </section>
@@ -153,87 +153,103 @@
             </select>
 
            <div class="card-view-buttons">
-            <button class="button card-view-button active" type="button">
+            <a class="button card-view-button active" href="#">
               <span class="visually-hidden"> Показать карточки </span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
                 <path fill="#000" d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
               </svg>
-            </button>
-            <button class="button card-view-button" type="button">
+            </a>
+            <a class="button card-view-button" href="#">
               <span class="visually-hidden"> Показать слайдшоу </span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none"><g fill="#000" clip-path="url(#a)">
                 <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
               </svg>
-            </button>
-            <button class="button card-view-button" type="button">
+            </a>
+            <a class="button card-view-button" href="#">
               <span class="visually-hidden">Показать список</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
                 <path fill="#000" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
               </svg>
-            </button>
+            </a>
            </div>
           </div>
 
           <ul class="product-list">
             <li class="product-card">
-                <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/hotel/hotel-1.jpg" width="300" height="212" alt="Каменный грот с видом на звездное небо">
-                </a>
-                <a class="product-card-link" href="#">
-                    <h3 class="product-card-title"> Amara Resort & Spa</h3>
-                </a>
-                <p class="product-card-name">Гостиница</p>
-                <p class="product-card-price">От 4000 ₽</p>
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/hotel/hotel-1.jpg" width="300" height="212" alt="Каменный грот с видом на звездное небо">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title"> Amara Resort & Spa</h3>
+              </a>
+              <div class="product-card-content">
+               <p class="product-card-name">Гостиница</p>
+               <p class="product-card-price">От 4000 ₽</p>
+              </div>
+              <div class="product-card-button">
                 <a class="button product-card-more" href="#">Подробнее</a>
                 <button class="button product-card-favorites" type="button">В избранное</button>
                 <span class="product-card-rating"></span>
                 <span class="visually-hidden"> Четыре звезды </span>
                 <span class="button button-rating">Рейтинг: 8,5</span>
+             </div>
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/hotel/hotel-2.jpg" width="300" height="212" alt="Радуга на фоне гор">
-                </a>
-                <a class="product-card-link" href="#">
-                    <h3 class="product-card-title"> Villas at Poco Diablo</h3>
-                </a>
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/hotel/hotel-2.jpg" width="300" height="212" alt="Радуга на фоне гор">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title"> Villas at Poco Diablo</h3>
+              </a>
+              <div class="product-card-content">
                 <p class="product-card-name">Гостиница</p>
                 <p class="product-card-price">От 5000 ₽</p>
+              </div>
+              <div class="product-card-button">
                 <a class="button product-card-more" href="#">Подробнее</a>
                 <button class="button product-card-favorites favorites-added" type="button">В избранном</button>
                 <span class="product-card-rating"></span>
                 <span class="visually-hidden"> Четыре звезды </span>
                 <span class="button button-rating">Рейтинг: 9,2</span>
+              </div>
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/hotel/hotel-3.jpg" width="300" height="212" alt="Красные горы в густой зелени">
-                </a>
-                <a class="product-card-link" href="#">
-                    <h3 class="product-card-title"> Desert Quail Inn </h3>
-                </a>
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/hotel/hotel-3.jpg" width="300" height="212" alt="Красные горы в густой зелени">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title"> Desert Quail Inn </h3>
+              </a>
+              <div class="product-card-content">
                 <p class="product-card-name">Гостиница</p>
                 <p class="product-card-price">От 2500 ₽</p>
+              </div>
+              <div class="product-card-button">
                 <a class="button product-card-more" href="#">Подробнее</a>
                 <button class="button product-card-favorites" type="button">В избранное</button>
                 <span class="product-card-rating stars-three"></span>
                 <span class="visually-hidden"> Три звезды </span>
                 <span class="button button-rating">Рейтинг: 6,9</span>
+              </div>
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="#">
-                    <img class="product-card-image" src="images/hotel/hotel-4.jpg" width="300" height="212" alt="Красные горы, озаренные закатом, на фоне зведного неба">
-                </a>
-                <a class="product-card-link" href="#">
-                    <h3 class="product-card-title"> GreenTree Inn</h3>
-                </a>
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/hotel/hotel-4.jpg" width="300" height="212" alt="Красные горы, озаренные закатом, на фоне зведного неба">
+              </a>
+              <a class="product-card-link" href="#">
+                <h3 class="product-card-title"> GreenTree Inn</h3>
+              </a>
+              <div class="product-card-content">
                 <p class="product-card-name">Гостиница</p>
                 <p class="product-card-price">От 1500 ₽</p>
+              </div>
+              <div class="product-card-button">
                 <a class="button product-card-more" href="#">Подробнее</a>
                 <button class="button product-card-favorites" type="button">В избранное</button>
                 <span class="product-card-rating stars-two"></span>
                 <span class="visually-hidden"> Две звезды </span>
                 <span class="button button-rating">Рейтинг: 5,0</span>
+              </div>
             </li>
           </ul>
 
