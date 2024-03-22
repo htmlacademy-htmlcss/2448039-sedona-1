@@ -218,6 +218,8 @@ body {
 }
 
 .hero {
+    width: 1200px;
+    height: 485px;
     background-image: url("../images/index-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
